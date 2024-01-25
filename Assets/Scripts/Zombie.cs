@@ -15,6 +15,7 @@ public class Zombie : MonoBehaviour
 
     public static event ZombieStick OnZombieStick;
     private Rigidbody2D limb;
+    private Rigidbody2D stuckLimb;
     private Vector3 mousePosition;
     private Vector3 forceDirection;
 
@@ -51,10 +52,26 @@ public class Zombie : MonoBehaviour
         {
             limb = rightFoot;
         }
+
         if (Input.GetKeyUp(KeyCode.A))
         {
             limb = null;
-            leftHand.constraints = RigidbodyConstraints2D.FreezePosition;
+            stuckLimb = leftHand;
+        }
+        else if (Input.GetKeyUp(KeyCode.D))
+        {
+            limb = null;
+            stuckLimb = rightHand;
+        }
+        else if (Input.GetKeyUp(KeyCode.Z))
+        {
+            limb = null;
+            stuckLimb = leftFoot;
+        }
+        else if (Input.GetKeyUp(KeyCode.C))
+        {
+            limb = null;
+            stuckLimb = rightFoot;
         }
     }
 
@@ -64,6 +81,12 @@ public class Zombie : MonoBehaviour
         {
             limb.constraints = RigidbodyConstraints2D.None;
         }
+
+        if (stuckLimb != null)
+        {
+            stuckLimb.constraints = RigidbodyConstraints2D.FreezePosition;
+        }
+
         mousePosition = LevelManager.Instance.camera.ScreenToWorldPoint(Input.mousePosition);
         forceDirection = (mousePosition - limb.transform.position).normalized;
         limb.AddForce(forceDirection * speed, ForceMode2D.Impulse);
