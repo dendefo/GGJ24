@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance { get; private set; }
     public Zombie Zombie { get;set; }
     [SerializeField] GameObject SpawnPoint;
+    public Camera camera;
     private void Awake()
     {
         if (Instance == null)

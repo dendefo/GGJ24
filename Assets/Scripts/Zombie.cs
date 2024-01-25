@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,10 +15,14 @@ public class Zombie : MonoBehaviour
 
     public static event ZombieStick OnZombieStick;
     private Rigidbody2D limb;
+    private Vector3 mousePosition;
+    private Vector3 forceDirection;
 
     private void Awake()
     {
         LevelManager.Instance.Zombie = this;
+
+        limb = leftHand; // Currently default to left hand
     }
 
     public void Stick()
@@ -25,29 +30,42 @@ public class Zombie : MonoBehaviour
         OnZombieStick?.Invoke(this);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        
-        
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             limb = leftHand;
-            leftHand.AddForce(Vector2.up * speed, ForceMode2D.Impulse);
         }
-        if (Input.GetKey(KeyCode.D))
+
+        else if (Input.GetKeyDown(KeyCode.D))
         {
             limb = rightHand;
-            rightHand.AddForce(Vector2.up * speed, ForceMode2D.Impulse);
         }
-        if (Input.GetKey(KeyCode.Z))
+
+        else if (Input.GetKeyDown(KeyCode.Z))
         {
             limb = leftFoot;
-            leftFoot.AddForce(Vector2.up * speed, ForceMode2D.Impulse);
         }
-        if (Input.GetKey(KeyCode.C))
+
+        else if (Input.GetKeyDown(KeyCode.C))
         {
             limb = rightFoot;
-            rightFoot.AddForce(Vector2.up * speed, ForceMode2D.Impulse);
         }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            limb = null;
+            leftHand.constraints = RigidbodyConstraints2D.FreezePosition;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (limb != null)
+        {
+            limb.constraints = RigidbodyConstraints2D.None;
+        }
+        mousePosition = LevelManager.Instance.camera.ScreenToWorldPoint(Input.mousePosition);
+        forceDirection = (mousePosition - limb.transform.position).normalized;
+        limb.AddForce(forceDirection * speed, ForceMode2D.Impulse);
     }
 }
