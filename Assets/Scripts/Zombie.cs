@@ -5,16 +5,16 @@ using UnityEngine;
 
 public class Zombie : MonoBehaviour
 {
-    [SerializeField] Rigidbody2D leftHand;
-    [SerializeField] Rigidbody2D rightHand;
-    [SerializeField] Rigidbody2D leftFoot;
-    [SerializeField] Rigidbody2D rightFoot;
+    [SerializeField] LimbEnd leftHand;
+    [SerializeField] LimbEnd rightHand;
+    [SerializeField] LimbEnd leftFoot;
+    [SerializeField] LimbEnd rightFoot;
     [SerializeField] float speed;
 
     public delegate void ZombieStick(Zombie zombie);
 
     public static event ZombieStick OnZombieStick;
-    private Rigidbody2D limb;
+    private LimbEnd limb;
     private Rigidbody2D stuckLimb;
     private Vector3 mousePosition;
     private Vector3 forceDirection;
@@ -33,62 +33,38 @@ public class Zombie : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            limb = leftHand;
-        }
+        if (Input.GetKeyDown(KeyCode.A)) UnstickLimb(leftHand);
 
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            limb = rightHand;
-        }
+        else if (Input.GetKeyDown(KeyCode.D)) UnstickLimb(rightHand);
 
-        else if (Input.GetKeyDown(KeyCode.Z))
-        {
-            limb = leftFoot;
-        }
+        else if (Input.GetKeyDown(KeyCode.Z)) UnstickLimb(leftFoot);
 
-        else if (Input.GetKeyDown(KeyCode.C))
-        {
-            limb = rightFoot;
-        }
+        else if (Input.GetKeyDown(KeyCode.C)) UnstickLimb(rightFoot);
 
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            limb = null;
-            stuckLimb = leftHand;
-        }
-        else if (Input.GetKeyUp(KeyCode.D))
-        {
-            limb = null;
-            stuckLimb = rightHand;
-        }
-        else if (Input.GetKeyUp(KeyCode.Z))
-        {
-            limb = null;
-            stuckLimb = leftFoot;
-        }
-        else if (Input.GetKeyUp(KeyCode.C))
-        {
-            limb = null;
-            stuckLimb = rightFoot;
-        }
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.Z) || Input.GetKeyUp(KeyCode.C)) { limb.isActive = false; limb = null; }
     }
 
     private void FixedUpdate()
     {
-        if (limb != null)
-        {
-            limb.constraints = RigidbodyConstraints2D.None;
-        }
+        //if (limb != null)
+        //{
+        //    limb.constraints = RigidbodyConstraints2D.None;
+        //}
 
-        if (stuckLimb != null)
-        {
-            stuckLimb.constraints = RigidbodyConstraints2D.FreezePosition;
-        }
-
+        //if (stuckLimb != null)
+        //{
+        //    stuckLimb.constraints = RigidbodyConstraints2D.FreezePosition;
+        //}
+        if (limb == null) return;
         mousePosition = LevelManager.Instance.camera.ScreenToWorldPoint(Input.mousePosition);
         forceDirection = (mousePosition - limb.transform.position).normalized;
-        limb.AddForce(forceDirection * speed, ForceMode2D.Impulse);
+        limb.rb.AddForce(forceDirection * speed, ForceMode2D.Impulse);
+    }
+
+    void UnstickLimb(LimbEnd limbb)
+    {
+        limb = limbb;
+        limb.isActive = true;
+        limb.OtherJoints.ForEach(joint => Destroy(joint));
     }
 }

@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 6313345992962474744}
   m_Layer: 0
   m_Name: Right Arm
-  m_TagString: Untagged
+  m_TagString: Stickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2434,7 +2434,7 @@ GameObject:
   - component: {fileID: 1556618802322413765}
   m_Layer: 0
   m_Name: Left Arm
-  m_TagString: Untagged
+  m_TagString: Stickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2555,7 +2555,7 @@ GameObject:
   - component: {fileID: 175264079794835212}
   m_Layer: 0
   m_Name: Right Leg
-  m_TagString: Untagged
+  m_TagString: Stickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2676,7 +2676,7 @@ GameObject:
   - component: {fileID: 1201580700502307432}
   m_Layer: 0
   m_Name: Left Leg
-  m_TagString: Untagged
+  m_TagString: Stickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3185,6 +3185,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3346276223636773435, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_TagString
+      value: Stickable
+      objectReference: {fileID: 0}
+    - target: {fileID: -3263344706565303754, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_TagString
+      value: Stickable
+      objectReference: {fileID: 0}
+    - target: {fileID: -1024815538560704356, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_TagString
+      value: Stickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 386791141387813222, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_TagString
+      value: Stickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 613742145289411635, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_TagString
+      value: Stickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459119641201781150, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_TagString
+      value: Stickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297364353584691495, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_TagString
+      value: Stickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157741701538757237, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_TagString
+      value: Stickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427455769572090415, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_TagString
+      value: Stickable
+      objectReference: {fileID: 0}
     - target: {fileID: 6278137247093042307, guid: 999f2899734e25247a04b1013e105c05, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -3192,6 +3228,14 @@ PrefabInstance:
     - target: {fileID: 6278137247093042307, guid: 999f2899734e25247a04b1013e105c05, type: 3}
       propertyPath: m_AutoRebind
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334863079012625961, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_TagString
+      value: Stickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7389951872204701685, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_TagString
+      value: Stickable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
