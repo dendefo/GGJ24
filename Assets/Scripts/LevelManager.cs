@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
 
     private void Zombie_OnZombieStick(Zombie zombie)
     {
-        throw new System.NotImplementedException();
+        zombie.enabled = false;
     }
     private void OnDisable()
     {
