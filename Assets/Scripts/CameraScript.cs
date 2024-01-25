@@ -13,8 +13,8 @@ public class CameraScript : MonoBehaviour
     [Tooltip("How fast does camera follows the player \n 0 - don't, 1 - immediatlly")][Range(0, 1)][SerializeField] float CameraSpeed;
     void Update()
     {
-        var x = Mathf.Min(Mathf.Max(LevelManager.Instance.Player.transform.position.x + XOffset * cam.orthographicSize * cam.aspect, Boundries.xMin + (cam.orthographicSize * cam.aspect)), Boundries.xMax - (cam.orthographicSize * cam.aspect));
-        var y = Mathf.Min(Mathf.Max(LevelManager.Instance.Player.transform.position.y + YOffset * cam.orthographicSize, Boundries.yMin + (cam.orthographicSize)), Boundries.yMax - (cam.orthographicSize));
+        var x = Mathf.Min(Mathf.Max(LevelManager.Instance.Zombie.transform.position.x + XOffset * cam.orthographicSize * cam.aspect, Boundries.xMin + (cam.orthographicSize * cam.aspect)), Boundries.xMax - (cam.orthographicSize * cam.aspect));
+        var y = Mathf.Min(Mathf.Max(LevelManager.Instance.Zombie.transform.position.y + YOffset * cam.orthographicSize, Boundries.yMin + (cam.orthographicSize)), Boundries.yMax - (cam.orthographicSize));
         transform.position = Vector3.Lerp(transform.position, new Vector3(x, y, transform.position.z), CameraSpeed);
     }
     #region Gizmo
