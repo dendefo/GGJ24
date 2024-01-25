@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 991243264958739811, guid: b663eba130418664bb86512e306d981a, type: 3}
       propertyPath: m_Name
-      value: Floor
+      value: Ceiling
       objectReference: {fileID: 0}
     - target: {fileID: 3036123896691739567, guid: b663eba130418664bb86512e306d981a, type: 3}
       propertyPath: m_LocalPosition.x
