@@ -7,6 +7,9 @@
     <list default="true" id="9335e0c4-3e43-4686-a5e8-246c7c32c89d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ24/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ24/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level-1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level-1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LimbEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LimbEnd.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Zombie.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +97,8 @@
       <updated>1706210238949</updated>
       <workItem from="1706210241468" duration="781000" />
       <workItem from="1706212159855" duration="4632000" />
-      <workItem from="1706218289144" duration="1226000" />
+      <workItem from="1706218289144" duration="2417000" />
+      <workItem from="1706225113398" duration="1927000" />
     </task>
     <servers />
   </component>
