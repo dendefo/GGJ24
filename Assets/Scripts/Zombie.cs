@@ -31,12 +31,12 @@ public class Zombie : MonoBehaviour
     private void Awake()
     {
         LevelManager.Instance.Zombie = this;
-        
+
     }
 
     private void OnEnable()
     {
-        AudioSource.PlayClipAtPoint(voiceLines[rnd.Next(0, voiceLines.Count)],Vector3.zero);
+        AudioSource.PlayClipAtPoint(voiceLines[rnd.Next(0, voiceLines.Count)], LevelManager.Instance.camera.transform.position);
     }
     public void Stick()
     {
@@ -75,6 +75,7 @@ public class Zombie : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            if (LevelManager.Instance.heightLine.transform.position.y > maxY) return;
             foreach (var bone in bones)
             {
                 bone.gameObject.tag = "Stickable";
