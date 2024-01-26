@@ -71,9 +71,6 @@ public class Zombie : MonoBehaviour
                 bone.bodyType = RigidbodyType2D.Static;
                 bone.includeLayers = LayerMask.GetMask("Zombie");
             }
-<<<<<<< Updated upstream
-=======
-
             if (LevelManager.Instance.heightLine.transform.position.y < maxY)
                 LevelManager.Instance.heightLine.transform.position = new Vector3(
                     LevelManager.Instance.heightLine.transform.position.x, maxY,
@@ -83,7 +80,6 @@ public class Zombie : MonoBehaviour
             leftHand.Disable();
             rightFoot.Disable();
             rightHand.Disable();
->>>>>>> Stashed changes
             OnZombieStick(this);
         }
     }
