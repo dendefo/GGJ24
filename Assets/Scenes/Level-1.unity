@@ -16237,7 +16237,7 @@ PrefabInstance:
       objectReference: {fileID: 1044441870}
     - target: {fileID: 2295325118881551224, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4438750724403042742, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16282,6 +16282,10 @@ PrefabInstance:
     - target: {fileID: 6359051557723030877, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
       propertyPath: m_Name
       value: LevelManger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032849898825412050, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

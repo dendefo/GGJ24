@@ -47,7 +47,7 @@ public class LevelManager : MonoBehaviour
 
         if (timerTexts[currentPlayer] != null)
         {
-            timerTexts[currentPlayer].SetText("Timer " + seconds.ToString());
+            timerTexts[currentPlayer].SetText(seconds.ToString());
         }
 
         if (countdownTimer[currentPlayer] <= 0f)
