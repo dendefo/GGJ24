@@ -9,16 +9,18 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance { get; private set; }
     public Zombie Zombie { get; set; }
-    [SerializeField] GameObject SpawnPoint;
+    [SerializeField] GameObject[] SpawnPoints;
     public Camera camera;
     public List<GameObject> zombiePrefabs;
     public GameObject heightLine;
     public GameObject playableArea;
     public float score;
 
-    public TextMeshProUGUI timerText;
+    public TextMeshProUGUI[] timerTexts;
     public TextMeshProUGUI scoreText;
-    private float countdownTimer = 60f;
+    private float[] countdownTimer = { 60f, 60f };
+
+    [SerializeField] private int currentPlayer = 0;
 
     private void Awake()
     {
@@ -30,24 +32,28 @@ public class LevelManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        Instantiate(zombiePrefabs[Random.Range(0, zombiePrefabs.Count)], SpawnPoints[currentPlayer].transform.position,
+            Quaternion.identity);
     }
 
     private void Update()
     {
-        countdownTimer -= Time.deltaTime;
+        countdownTimer[currentPlayer] -= Time.deltaTime;
 
-        countdownTimer = Mathf.Max(countdownTimer, 0f);
+        countdownTimer[currentPlayer] = Mathf.Max(countdownTimer[currentPlayer], 0f);
 
-        int seconds = Mathf.FloorToInt(countdownTimer);
+        int seconds = Mathf.FloorToInt(countdownTimer[currentPlayer]);
 
-        if (timerText != null)
+        if (timerTexts[currentPlayer] != null)
         {
-            timerText.SetText("Timer " + seconds.ToString());
+            timerTexts[currentPlayer].SetText("Timer " + seconds.ToString());
         }
 
-        if (countdownTimer <= 0f)
+        if (countdownTimer[currentPlayer] <= 0f)
         {
             // TODO: Finish the game...
+            Time.timeScale = 0;
         }
     }
 
@@ -63,7 +69,11 @@ public class LevelManager : MonoBehaviour
         if (score > 0) scoreText.SetText("Score " + score);
 
         zombie.enabled = false;
-        Instantiate(zombiePrefabs[Random.Range(0, zombiePrefabs.Count)], SpawnPoint.transform.position,
+        
+        if (currentPlayer == 0) currentPlayer = 1;
+        else currentPlayer = 0;
+        
+        Instantiate(zombiePrefabs[Random.Range(0, zombiePrefabs.Count)], SpawnPoints[currentPlayer].transform.position,
             Quaternion.identity);
     }
 

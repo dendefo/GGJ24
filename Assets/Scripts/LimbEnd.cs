@@ -18,6 +18,7 @@ public class LimbEnd : MonoBehaviour
     [SerializeField] Sprite green;
     public Sprite red;
     [SerializeField] Sprite empty;
+
     public bool isActive
     {
         get { return _isActive; }
@@ -51,10 +52,12 @@ public class LimbEnd : MonoBehaviour
             }
         }
     }
+
     public float minAngle;
     public float maxAngle;
     public float SMinAngle;
     public float SMaxAngle;
+
     private void Awake()
     {
         secondJoint = transform.parent.GetComponent<HingeJoint2D>();
@@ -64,10 +67,12 @@ public class LimbEnd : MonoBehaviour
         SMinAngle = thirdJoint.limits.min;
         SMaxAngle = thirdJoint.limits.max;
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //if (isActive) return;
-        if (!collision.gameObject.CompareTag("Stickable")) return;
+        if (!collision.gameObject.CompareTag("Stickable") && !collision.gameObject.CompareTag("Macapig") &&
+            !collision.gameObject.CompareTag("StickableZombie")) return;
         var joint = collision.collider.AddComponent<FixedJoint2D>();
         joint.connectedBody = collision.otherCollider.attachedRigidbody;
         joint.anchor = collision.GetContact(0).normal;
@@ -82,9 +87,9 @@ public class LimbEnd : MonoBehaviour
         thirdJoint.limits = limits2;
         spriteRenderer.sprite = red;
     }
+
     public void Disable()
     {
         spriteRenderer.sprite = empty;
     }
-
 }
