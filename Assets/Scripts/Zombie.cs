@@ -27,6 +27,7 @@ public class Zombie : MonoBehaviour
     private float maxAngle;
     public float maxY = 0;
     [SerializeField] private List<AudioClip> voiceLines = new List<AudioClip>();
+    public List<ParticleSystem> particles;
 
     private void Awake()
     {

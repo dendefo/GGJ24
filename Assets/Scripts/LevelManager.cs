@@ -69,7 +69,7 @@ public class LevelManager : MonoBehaviour
     private void Zombie_OnZombieStick(Zombie zombie)
     {
         string formattedFloat = heightLine.transform.position.y.ToString("F2");
-        score = (int)float.Parse(formattedFloat)*100;
+        score = (int)(float.Parse(formattedFloat)*100);
         if (score > 0) scoreText.SetText("Score " + score);
 
         zombie.enabled = false;

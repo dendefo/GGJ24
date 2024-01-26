@@ -135,7 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 6353642798099341707}
   OtherJoints: []
   _isActive: 0
@@ -337,7 +336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 5925937524681469095}
   OtherJoints: []
   _isActive: 0
@@ -539,7 +537,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 1027917577223079983}
   OtherJoints: []
   _isActive: 0
@@ -741,7 +738,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 4107618769341430744}
   OtherJoints: []
   _isActive: 0
@@ -850,7 +846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
       propertyPath: speed
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
       propertyPath: leftFoot

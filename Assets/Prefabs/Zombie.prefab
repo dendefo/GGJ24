@@ -135,7 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 2419841049192343196}
   OtherJoints: []
   _isActive: 0
@@ -252,7 +251,7 @@ MonoBehaviour:
   rightHand: {fileID: 3448756274172490394}
   leftFoot: {fileID: 1601392158808186448}
   rightFoot: {fileID: 8916503890802854901}
-  speed: 5
+  speed: 10
   bones:
   - {fileID: 8725377474550372367}
   - {fileID: 7786240524444884696}
@@ -273,6 +272,10 @@ MonoBehaviour:
   voiceLines:
   - {fileID: 8300000, guid: 0b4691cf2b7a12749b8c7f0d7da310c2, type: 3}
   - {fileID: 8300000, guid: 59e83fc9a4014d84a90f1a3ca0b864c6, type: 3}
+  particles:
+  - {fileID: 5279686657702903262, guid: 42c141471e1ad114689d0104a88120ce, type: 3}
+  - {fileID: 2744296253117281154, guid: 2d28be0c894d28642a3393f6e870b8f0, type: 3}
+  - {fileID: 6722366501075327230, guid: 06a1b89c4a48bb149b411167e294f35e, type: 3}
 --- !u!210 &7576371473862450403
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -420,7 +423,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 5623035859612817555}
   OtherJoints: []
   _isActive: 0
@@ -622,7 +624,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 5378556983930506160}
   OtherJoints: []
   _isActive: 0
@@ -824,7 +825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 8257682617055987231}
   OtherJoints: []
   _isActive: 0

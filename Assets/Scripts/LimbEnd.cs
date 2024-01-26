@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -86,6 +85,9 @@ public class LimbEnd : MonoBehaviour
         limits2.min = SMinAngle;
         thirdJoint.limits = limits2;
         spriteRenderer.sprite = red;
+        if (Random.Range(0f, 1f) > 0.2f) return;
+        var particle = Instantiate(LevelManager.Instance.Zombie.particles[Random.Range(0, LevelManager.Instance.Zombie.particles.Count)]);
+        particle.transform.position = transform.position;
     }
 
     public void Disable()

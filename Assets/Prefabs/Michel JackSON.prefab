@@ -135,7 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 8967395263468877804}
   OtherJoints: []
   _isActive: 0
@@ -337,7 +336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 2771963651897593621}
   OtherJoints: []
   _isActive: 0
@@ -539,7 +537,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 206628765118233963}
   OtherJoints: []
   _isActive: 0
@@ -741,7 +738,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 943075737741900060}
   OtherJoints: []
   _isActive: 0
@@ -845,6 +841,10 @@ PrefabInstance:
       value: 0.030001005
       objectReference: {fileID: 0}
     - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
       propertyPath: leftFoot
       value: 
       objectReference: {fileID: 7563634884662543967}
@@ -920,6 +920,14 @@ PrefabInstance:
       propertyPath: bones.Array.data[14]
       value: 
       objectReference: {fileID: 8967395263468877804}
+    - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
+      propertyPath: particles.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
+      propertyPath: particles.Array.data[3]
+      value: 
+      objectReference: {fileID: 5700680778112003902, guid: 4e8307ed03e736a4788dee2c84dae2de, type: 3}
     - target: {fileID: 7161347499868109681, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 3.384288
@@ -1267,8 +1275,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 0.2651936
+  m_UseAutoMass: 0
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1359,8 +1367,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 0.52818364
+  m_UseAutoMass: 0
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1461,8 +1469,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 1.1536727
+  m_UseAutoMass: 0
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1563,8 +1571,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 0.2818929
+  m_UseAutoMass: 0
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1655,8 +1663,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 0.5542611
+  m_UseAutoMass: 0
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1722,8 +1730,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 0.2749935
+  m_UseAutoMass: 0
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1819,8 +1827,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 0.26017058
+  m_UseAutoMass: 0
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1911,8 +1919,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 0.27460554
+  m_UseAutoMass: 0
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2003,8 +2011,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 0.30964544
+  m_UseAutoMass: 0
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2095,8 +2103,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 0.2831929
+  m_UseAutoMass: 0
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2187,8 +2195,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 0.33577073
+  m_UseAutoMass: 0
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
