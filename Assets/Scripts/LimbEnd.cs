@@ -7,9 +7,9 @@ using UnityEngine;
 
 public class LimbEnd : MonoBehaviour
 {
-    public FixedJoint2D mainJoint;
+    //public FixedJoint2D mainJoint;
     public Rigidbody2D rb;
-    public List<FixedJoint2D> OtherJoints;
+    public List<HingeJoint2D> OtherJoints;
     [SerializeField] private bool _isActive = false;
     public HingeJoint2D secondJoint;
     public HingeJoint2D thirdJoint;
@@ -73,9 +73,9 @@ public class LimbEnd : MonoBehaviour
         //if (isActive) return;
         if (!collision.gameObject.CompareTag("Stickable") && !collision.gameObject.CompareTag("Macapig") &&
             !collision.gameObject.CompareTag("StickableZombie")) return;
-        var joint = collision.collider.AddComponent<FixedJoint2D>();
-        joint.connectedBody = collision.otherCollider.attachedRigidbody;
-        joint.anchor = collision.GetContact(0).normal;
+        var joint = this.AddComponent<HingeJoint2D>();
+        joint.connectedBody = collision.collider.attachedRigidbody;
+        //joint.anchor = collision.GetContact(0).normal;
         OtherJoints.Add(joint);
         JointAngleLimits2D limits = new JointAngleLimits2D();
         limits.max = maxAngle;

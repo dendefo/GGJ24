@@ -135,7 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 5479058723206159609}
   OtherJoints: []
   _isActive: 0
@@ -337,7 +336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 8970206360900486926}
   OtherJoints: []
   _isActive: 0
@@ -539,7 +537,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 2515496523195216797}
   OtherJoints: []
   _isActive: 0
@@ -741,7 +738,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb76f525e45d18d429f07f9309cf02fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainJoint: {fileID: 0}
   rb: {fileID: 5409137114880028828}
   OtherJoints: []
   _isActive: 0
