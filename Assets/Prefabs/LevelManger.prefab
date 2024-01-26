@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.6351446, y: -4.5328765, z: 0.019251935}
-  m_LocalScale: {x: 20, y: 10, z: 20}
+  m_LocalScale: {x: 55.656, y: 10, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4438750724403042742}
@@ -135,8 +135,12 @@ MonoBehaviour:
   zombiePrefabs:
   - {fileID: 4204474091657384173, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
   - {fileID: 5146467297492989315, guid: ffed5b7710e113147bbce99d5c30c1b5, type: 3}
+  - {fileID: 6517529691921860093, guid: 52ecebc8e003cc547baa7cdc6ce85cd6, type: 3}
+  - {fileID: 1547663337121001868, guid: 4b0f82144bd85294f939a56de99031e2, type: 3}
+  - {fileID: 5879003491839248783, guid: b61f32ccd728c8c4a983c3dfb667e818, type: 3}
   heightLine: {fileID: 7274017375620364313}
   playableArea: {fileID: 2025821258110326235}
+  score: 0
 --- !u!1 &7274017375620364313
 GameObject:
   m_ObjectHideFlags: 0

@@ -15518,30 +15518,6 @@ PrefabInstance:
       propertyPath: SpawnPoint
       value: 
       objectReference: {fileID: 1228684898}
-    - target: {fileID: 686875565141211886, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: zombiePrefab
-      value: 
-      objectReference: {fileID: 4204474091657384173, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
-    - target: {fileID: 686875565141211886, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: zombiePrefabs.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 686875565141211886, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: zombiePrefabs.Array.data[0]
-      value: 
-      objectReference: {fileID: 4204474091657384173, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
-    - target: {fileID: 686875565141211886, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: zombiePrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 5146467297492989315, guid: ffed5b7710e113147bbce99d5c30c1b5, type: 3}
-    - target: {fileID: 686875565141211886, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: zombiePrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 6517529691921860093, guid: 52ecebc8e003cc547baa7cdc6ce85cd6, type: 3}
-    - target: {fileID: 686875565141211886, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: zombiePrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 1547663337121001868, guid: 4b0f82144bd85294f939a56de99031e2, type: 3}
     - target: {fileID: 4438750724403042742, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.6351446
@@ -15585,26 +15561,6 @@ PrefabInstance:
     - target: {fileID: 6359051557723030877, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
       propertyPath: m_Name
       value: LevelManger
-      objectReference: {fileID: 0}
-    - target: {fileID: 8032849898825412050, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 55.656
-      objectReference: {fileID: 0}
-    - target: {fileID: 8032849898825412050, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8032849898825412050, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8032849898825412050, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.6351446
-      objectReference: {fileID: 0}
-    - target: {fileID: 8032849898825412050, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.019251935
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
