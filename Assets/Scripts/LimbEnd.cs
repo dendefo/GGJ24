@@ -12,6 +12,11 @@ public class LimbEnd : MonoBehaviour
     [SerializeField] private bool _isActive = false;
     public HingeJoint2D secondJoint;
     public HingeJoint2D thirdJoint;
+    [SerializeField] SpriteRenderer spriteRenderer;
+    [SerializeField] Sprite white;
+    [SerializeField] Sprite green;
+    [SerializeField] Sprite red;
+    [SerializeField] Sprite empty;
     public bool isActive
     {
         get { return _isActive; }
@@ -29,6 +34,7 @@ public class LimbEnd : MonoBehaviour
                 limits2.max = SMaxAngle;
                 limits2.min = SMinAngle;
                 thirdJoint.limits = limits2;
+                spriteRenderer.sprite = green;
             }
             else
             {
@@ -40,6 +46,7 @@ public class LimbEnd : MonoBehaviour
                 limits2.max = thirdJoint.jointAngle;
                 limits2.min = thirdJoint.jointAngle;
                 thirdJoint.limits = limits2;
+                spriteRenderer.sprite = white;
             }
         }
     }
@@ -72,6 +79,11 @@ public class LimbEnd : MonoBehaviour
         limits2.max = SMaxAngle;
         limits2.min = SMinAngle;
         thirdJoint.limits = limits2;
+        spriteRenderer.sprite = red;
+    }
+    public void Disable()
+    {
+        spriteRenderer.sprite = empty;
     }
 
 }

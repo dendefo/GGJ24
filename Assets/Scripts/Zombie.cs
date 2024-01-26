@@ -56,6 +56,10 @@ public class Zombie : MonoBehaviour
                 bone.bodyType = RigidbodyType2D.Static;
                 bone.includeLayers = LayerMask.GetMask("Zombie");
             }
+            leftFoot.Disable();
+            leftHand.Disable();
+            rightFoot.Disable();
+            rightHand.Disable();
             OnZombieStick(this);
         }
     }
@@ -79,6 +83,7 @@ public class Zombie : MonoBehaviour
 
     void UnstickLimb(LimbEnd limbb)
     {
+        if (limb != null) return;
         limb = limbb;
         limb.isActive = true;
         limb.OtherJoints.ForEach(joint => Destroy(joint));
