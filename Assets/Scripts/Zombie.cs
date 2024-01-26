@@ -41,7 +41,17 @@ public class Zombie : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.C)) UnstickLimb(rightFoot);
 
-        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.Z) || Input.GetKeyUp(KeyCode.C)) { limb.isActive = false; limb = null; }
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.Z) ||
+            Input.GetKeyUp(KeyCode.C))
+        {
+            limb.isActive = false;
+            limb = null;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            OnZombieStick(this);
+        }
     }
 
     private void FixedUpdate()

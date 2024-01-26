@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -18,8 +19,5 @@ public class LimbEnd : MonoBehaviour
         joint.anchor = collision.GetContact(0).normal;
         OtherJoints.Add(joint);
     }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
 
-    }
 }
