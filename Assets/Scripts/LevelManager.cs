@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +8,7 @@ public class LevelManager : MonoBehaviour
     public Zombie Zombie { get;set; }
     [SerializeField] GameObject SpawnPoint;
     public Camera camera;
-    public GameObject zombiePrefab;
+    public List<GameObject> zombiePrefabs;
     private void Awake()
     {
         if (Instance == null)
@@ -30,8 +29,8 @@ public class LevelManager : MonoBehaviour
 
     private void Zombie_OnZombieStick(Zombie zombie)
     {
-        zombie.enabled = false;            
-        Instantiate(zombiePrefab, SpawnPoint.transform.position, Quaternion.identity);
+        zombie.enabled = false;
+        Instantiate(zombiePrefabs[Random.Range(0,zombiePrefabs.Count)], SpawnPoint.transform.position, Quaternion.identity);
 
     }
     private void OnDisable()

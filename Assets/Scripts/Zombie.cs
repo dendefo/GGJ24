@@ -10,20 +10,20 @@ public class Zombie : MonoBehaviour
     [SerializeField] LimbEnd leftFoot;
     [SerializeField] LimbEnd rightFoot;
     [SerializeField] float speed;
+    public List<Rigidbody2D> bones;
 
     public delegate void ZombieStick(Zombie zombie);
 
     public static event ZombieStick OnZombieStick;
     private LimbEnd limb;
-    private Rigidbody2D stuckLimb;
     private Vector3 mousePosition;
     private Vector3 forceDirection;
+    private float minAngle;
+    private float maxAngle;
 
     private void Awake()
     {
         LevelManager.Instance.Zombie = this;
-
-        limb = leftHand; // Currently default to left hand
     }
 
     public void Stick()
@@ -50,6 +50,12 @@ public class Zombie : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            foreach (var bone in bones)
+            {
+                bone.gameObject.tag = "Stickable";
+                bone.bodyType = RigidbodyType2D.Static;
+                bone.includeLayers = LayerMask.GetMask("Zombie");
+            }
             OnZombieStick(this);
         }
     }
