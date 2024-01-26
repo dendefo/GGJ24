@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class LevelManager : MonoBehaviour
 {
@@ -12,6 +15,10 @@ public class LevelManager : MonoBehaviour
     public GameObject heightLine;
     public GameObject playableArea;
     public float score;
+
+    public TextMeshProUGUI timerText;
+    public TextMeshProUGUI scoreText;
+    private float countdownTimer = 60f;
 
     private void Awake()
     {
@@ -25,6 +32,25 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        countdownTimer -= Time.deltaTime;
+
+        countdownTimer = Mathf.Max(countdownTimer, 0f);
+
+        int seconds = Mathf.FloorToInt(countdownTimer);
+
+        if (timerText != null)
+        {
+            timerText.SetText("Timer " + seconds.ToString());
+        }
+
+        if (countdownTimer <= 0f)
+        {
+            // TODO: Finish the game...
+        }
+    }
+
     private void OnEnable()
     {
         Zombie.OnZombieStick += Zombie_OnZombieStick;
@@ -34,6 +60,7 @@ public class LevelManager : MonoBehaviour
     {
         string formattedFloat = heightLine.transform.position.y.ToString("F2");
         score = float.Parse(formattedFloat);
+        if (score > 0) scoreText.SetText("Score " + score);
 
         zombie.enabled = false;
         Instantiate(zombiePrefabs[Random.Range(0, zombiePrefabs.Count)], SpawnPoint.transform.position,
