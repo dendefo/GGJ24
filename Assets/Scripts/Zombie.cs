@@ -36,7 +36,7 @@ public class Zombie : MonoBehaviour
 
     private void OnEnable()
     {
-        AudioSource.PlayClipAtPoint(voiceLines[rnd.Next(0, voiceLines.Count)], LevelManager.Instance.camera.transform.position);
+        AudioManager.Instance.PlayZombieTrack(voiceLines[rnd.Next(0, voiceLines.Count)]);
     }
     public void Stick()
     {

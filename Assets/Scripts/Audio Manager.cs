@@ -26,9 +26,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip MusicIntro;
     [SerializeField] private AudioClip MusicLoop;
 
-    private Queue<AudioClip> RadioQueue;
-    private Queue<AudioClip> MusicQueue;
-    private Queue<AudioClip> ZombieQueue;
+    private Queue<AudioClip> RadioQueue = new();
+    private Queue<AudioClip> MusicQueue = new();
+    private Queue<AudioClip> ZombieQueue = new();
 
     public static AudioManager Instance
     {
@@ -60,7 +60,7 @@ public class AudioManager : MonoBehaviour
         {
             _instance = this;
             DontDestroyOnLoad(this.gameObject);
-            StartCoroutine(PlayMusicLoop());
+            //StartCoroutine(PlayMusicLoop());
         }
     }
 
@@ -82,6 +82,7 @@ public class AudioManager : MonoBehaviour
     {
         ZombieQueue.Enqueue(clip);
         TryPlayNext(ZombieQueue, _zombieSource);
+        Debug.Log(clip.name);
     }
 
     public void PlayRadioTrack()
@@ -96,6 +97,7 @@ public class AudioManager : MonoBehaviour
 
     private void TryPlayNext(Queue<AudioClip> Reference,AudioSource Source)
     {
+        if (Reference.Count == 0) return;
         if (Reference.Peek() != null)
         {
             Source.clip = Reference.Dequeue();

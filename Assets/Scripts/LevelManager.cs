@@ -69,7 +69,7 @@ public class LevelManager : MonoBehaviour
         if (score > 0) scoreText.SetText("Score " + score);
 
         zombie.enabled = false;
-        
+        countdownTimer[currentPlayer] = 60f;
         if (currentPlayer == 0) currentPlayer = 1;
         else currentPlayer = 0;
         
