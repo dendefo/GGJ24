@@ -29,8 +29,13 @@ Transform:
   m_GameObject: {fileID: 1414812704444924109}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 3.96, y: 0.03, z: 0}
   m_LocalScale: {x: 1.25, y: 1, z: 1}
+=======
+  m_LocalPosition: {x: 4, y: 0.03, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7603441610030153875}
@@ -113,7 +118,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 3.9600003, y: 0.030001003}
+  m_ConnectedAnchor: {x: 3.999999, y: 0.030001236}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -211,6 +216,7 @@ MonoBehaviour:
   - {fileID: 8257682617055987231}
   - {fileID: 2419841049192343196}
   - {fileID: 5378556983930506160}
+  maxY: 0
 --- !u!210 &7576371473862450403
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -252,8 +258,13 @@ Transform:
   m_GameObject: {fileID: 7491784285990443925}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 3.801, y: 0, z: 0}
   m_LocalScale: {x: 1.25, y: 1, z: 1}
+=======
+  m_LocalPosition: {x: 4, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8821292776274639874}
@@ -336,7 +347,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 3.800997, y: -0.00000060163404}
+  m_ConnectedAnchor: {x: 3.9999971, y: -0.00000013783566}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -396,8 +407,13 @@ Transform:
   m_GameObject: {fileID: 7633066544326399852}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 3.547, y: -0.01, z: 0}
   m_LocalScale: {x: 1.25, y: 1, z: 1}
+=======
+  m_LocalPosition: {x: 4, y: -0.01, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4151135026564133829}
@@ -445,7 +461,11 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
+<<<<<<< Updated upstream
   m_ConnectedAnchor: {x: 3.5469995, y: -0.00999987}
+=======
+  m_ConnectedAnchor: {x: 4.0000005, y: -0.009999513}
+>>>>>>> Stashed changes
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -540,8 +560,13 @@ Transform:
   m_GameObject: {fileID: 8070817339143310206}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 4.24, y: 0.01, z: 0}
   m_LocalScale: {x: 1.25, y: 1, z: 1}
+=======
+  m_LocalPosition: {x: 4, y: 0.01, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3060851243928455408}
@@ -623,8 +648,13 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
+<<<<<<< Updated upstream
   m_Anchor: {x: -0.51, y: 0}
   m_ConnectedAnchor: {x: 3.602498, y: 0.010000463}
+=======
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 3.9999986, y: 0.01000082}
+>>>>>>> Stashed changes
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0

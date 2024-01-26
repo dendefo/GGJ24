@@ -29,9 +29,15 @@ Transform:
   m_GameObject: {fileID: 2690706331795454557}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 4.34, y: 0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+=======
+  m_LocalPosition: {x: 4, y: 0.03, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 7200437571487161924}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -113,7 +119,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 4.34, y: 0.030000696}
+  m_ConnectedAnchor: {x: 3.999998, y: 0.030000886}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -173,9 +179,15 @@ Transform:
   m_GameObject: {fileID: 2739909828548434588}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 4.24, y: 0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+=======
+  m_LocalPosition: {x: 4, y: 0.01, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 5378067882478203828}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -256,8 +268,13 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
+<<<<<<< Updated upstream
   m_Anchor: {x: -0.51, y: 0}
   m_ConnectedAnchor: {x: 3.7299976, y: 0.010000106}
+=======
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 3.9999979, y: 0.009999629}
+>>>>>>> Stashed changes
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -317,9 +334,15 @@ Transform:
   m_GameObject: {fileID: 5000846165858249768}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 3.89, y: -0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+=======
+  m_LocalPosition: {x: 4, y: -0.01, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 3186146439279346662}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -366,7 +389,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 3.8899994, y: -0.00999999}
+  m_ConnectedAnchor: {x: 4, y: -0.009999633}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -461,9 +484,15 @@ Transform:
   m_GameObject: {fileID: 6874386028242954112}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 4.24, y: 0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+=======
+  m_LocalPosition: {x: 4, y: 0.03, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 8071093766448636629}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -545,7 +574,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 4.2399993, y: 0.029999774}
+  m_ConnectedAnchor: {x: 3.999999, y: 0.02999888}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
