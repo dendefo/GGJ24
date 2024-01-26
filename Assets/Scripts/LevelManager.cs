@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     public List<GameObject> zombiePrefabs;
     public GameObject heightLine;
     public GameObject playableArea;
+    public float score;
 
     private void Awake()
     {
@@ -31,6 +32,9 @@ public class LevelManager : MonoBehaviour
 
     private void Zombie_OnZombieStick(Zombie zombie)
     {
+        string formattedFloat = heightLine.transform.position.y.ToString("F2");
+        score = float.Parse(formattedFloat);
+
         zombie.enabled = false;
         Instantiate(zombiePrefabs[Random.Range(0, zombiePrefabs.Count)], SpawnPoint.transform.position,
             Quaternion.identity);

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -24,8 +25,8 @@ public class LimbEnd : MonoBehaviour
         {
             _isActive = value;
 
-            if (value) 
-            { 
+            if (value)
+            {
                 JointAngleLimits2D limits = new JointAngleLimits2D();
                 limits.max = maxAngle;
                 limits.min = minAngle;
@@ -46,7 +47,7 @@ public class LimbEnd : MonoBehaviour
                 limits2.max = thirdJoint.jointAngle;
                 limits2.min = thirdJoint.jointAngle;
                 thirdJoint.limits = limits2;
-                spriteRenderer.sprite = white;
+                if (OtherJoints.Where(join => join != null).Count() == 0) spriteRenderer.sprite = white;
             }
         }
     }
@@ -65,7 +66,7 @@ public class LimbEnd : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (isActive) return;
+        //if (isActive) return;
         if (!collision.gameObject.CompareTag("Stickable")) return;
         var joint = collision.collider.AddComponent<FixedJoint2D>();
         joint.connectedBody = collision.otherCollider.attachedRigidbody;

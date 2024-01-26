@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 8785716020754089326}
   - component: {fileID: 7133565315904217686}
   - component: {fileID: 7576371473862450403}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Zombie
   m_TagString: Stickable
   m_Icon: {fileID: 0}
@@ -269,6 +269,10 @@ MonoBehaviour:
   - {fileID: 8257682617055987231}
   - {fileID: 2419841049192343196}
   - {fileID: 5378556983930506160}
+  maxY: 0
+  voiceLines:
+  - {fileID: 8300000, guid: 0b4691cf2b7a12749b8c7f0d7da310c2, type: 3}
+  - {fileID: 8300000, guid: 59e83fc9a4014d84a90f1a3ca0b864c6, type: 3}
 --- !u!210 &7576371473862450403
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -899,6 +903,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: zombie no
       objectReference: {fileID: 0}
+    - target: {fileID: -8653719598885068355, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -7595413430563298066, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 999f2899734e25247a04b1013e105c05, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.3274057
@@ -939,6 +951,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7519722154212866590, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -7336571044389460427, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3351868363131983666, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: -3346276223636773435, guid: 999f2899734e25247a04b1013e105c05, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -963,6 +987,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: -856138430712955627, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -735985239012028135, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -469542070303478727, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 386791141387813222, guid: 999f2899734e25247a04b1013e105c05, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -970,6 +1006,10 @@ PrefabInstance:
     - target: {fileID: 386791141387813222, guid: 999f2899734e25247a04b1013e105c05, type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 558580837604631819, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 613742145289411635, guid: 999f2899734e25247a04b1013e105c05, type: 3}
       propertyPath: m_Layer
@@ -1038,6 +1078,14 @@ PrefabInstance:
     - target: {fileID: 7389951872204701685, guid: 999f2899734e25247a04b1013e105c05, type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751269498262281042, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727091967253889458, guid: 999f2899734e25247a04b1013e105c05, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
