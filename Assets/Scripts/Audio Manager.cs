@@ -59,7 +59,7 @@ public class AudioManager : MonoBehaviour
         else
         {
             _instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            //DontDestroyOnLoad(this.gameObject);
             //StartCoroutine(PlayMusicLoop());
         }
     }

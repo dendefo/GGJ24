@@ -21,9 +21,12 @@ public class LevelManager : MonoBehaviour
     private float[] countdownTimer = { 60f, 60f };
 
     [SerializeField] private int currentPlayer = 0;
+    [SerializeField] GameObject WinScreen;
+    [SerializeField] TMPro.TMP_Text winnner;
 
     private void Awake()
     {
+        Time.timeScale = 1;
         if (Instance == null)
         {
             Instance = this;
@@ -52,7 +55,8 @@ public class LevelManager : MonoBehaviour
 
         if (countdownTimer[currentPlayer] <= 0f)
         {
-            // TODO: Finish the game...
+            WinScreen.SetActive(true);
+            winnner.SetText(currentPlayer==0?"RIGHT":"LEFT");
             Time.timeScale = 0;
         }
     }
@@ -65,7 +69,7 @@ public class LevelManager : MonoBehaviour
     private void Zombie_OnZombieStick(Zombie zombie)
     {
         string formattedFloat = heightLine.transform.position.y.ToString("F2");
-        score = float.Parse(formattedFloat);
+        score = (int)float.Parse(formattedFloat)*100;
         if (score > 0) scoreText.SetText("Score " + score);
 
         zombie.enabled = false;

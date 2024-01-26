@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 [ExecuteInEditMode]
 public class BackgroundManager : MonoBehaviour
@@ -12,9 +14,9 @@ public class BackgroundManager : MonoBehaviour
 
 
 
-    
+#if UNITY_EDITOR
     // Update is called once per frame
-    void Update()
+    void OnValidate()
     {
         foreach (ParalaxedObject Obj in ParalaxedObjects) 
         {
@@ -22,4 +24,5 @@ public class BackgroundManager : MonoBehaviour
 
         }
     }
+#endif
 }
