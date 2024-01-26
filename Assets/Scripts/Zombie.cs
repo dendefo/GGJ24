@@ -104,6 +104,7 @@ public class Zombie : MonoBehaviour
 
     void UnstickLimb(LimbEnd limbb)
     {
+        if (limb != null) return;
         limb = limbb;
         limb.isActive = true;
         limb.OtherJoints.ForEach(joint => Destroy(joint));
