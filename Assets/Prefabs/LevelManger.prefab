@@ -144,6 +144,7 @@ MonoBehaviour:
   - {fileID: 3739037750864865417, guid: 2f913c05c6d42144e8697ccdeab8f30e, type: 3}
   - {fileID: 583486642566590657, guid: f1a15330713dfd34499a7c6c1da1a44b, type: 3}
   - {fileID: 4546027681062129291, guid: a35a52378c0faf84f961420e9b6c6312, type: 3}
+  - {fileID: 4718850493746008984, guid: 0aa55d093592a8547ba83b3db5680774, type: 3}
   heightLine: {fileID: 7274017375620364313}
   playableArea: {fileID: 2025821258110326235}
   score: 0
