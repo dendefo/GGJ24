@@ -1207,8 +1207,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -100000
+    m_UpperAngle: 100000
 --- !u!70 &2473468624713367406
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1396,8 +1396,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -100000
+    m_UpperAngle: 100000
 --- !u!70 &3255268201244379805
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1585,8 +1585,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -100000
+    m_UpperAngle: 100000
 --- !u!70 &1592623713496621991
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1682,8 +1682,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -100000
+    m_UpperAngle: 100000
 --- !u!70 &5364498793220966194
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1924,8 +1924,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -100000
+    m_UpperAngle: 100000
 --- !u!70 &4323403410583729250
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2016,8 +2016,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -100000
+    m_UpperAngle: 100000
 --- !u!70 &8590033862033171027
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
