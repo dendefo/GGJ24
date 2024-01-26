@@ -270,6 +270,9 @@ MonoBehaviour:
   - {fileID: 2419841049192343196}
   - {fileID: 5378556983930506160}
   maxY: 0
+  voiceLines:
+  - {fileID: 8300000, guid: 0b4691cf2b7a12749b8c7f0d7da310c2, type: 3}
+  - {fileID: 8300000, guid: 59e83fc9a4014d84a90f1a3ca0b864c6, type: 3}
 --- !u!210 &7576371473862450403
 SortingGroup:
   m_ObjectHideFlags: 0
