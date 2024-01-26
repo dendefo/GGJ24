@@ -130,7 +130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43134822ccc5f494790365435f792537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnPoint: {fileID: 0}
+  SpawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
   camera: {fileID: 0}
   zombiePrefabs:
   - {fileID: 4204474091657384173, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
@@ -138,9 +140,19 @@ MonoBehaviour:
   - {fileID: 6517529691921860093, guid: 52ecebc8e003cc547baa7cdc6ce85cd6, type: 3}
   - {fileID: 1547663337121001868, guid: 4b0f82144bd85294f939a56de99031e2, type: 3}
   - {fileID: 5879003491839248783, guid: b61f32ccd728c8c4a983c3dfb667e818, type: 3}
+  - {fileID: 7829095332311013637, guid: 9ca1defb5d869c64db4837e79c14ba58, type: 3}
+  - {fileID: 3739037750864865417, guid: 2f913c05c6d42144e8697ccdeab8f30e, type: 3}
+  - {fileID: 583486642566590657, guid: f1a15330713dfd34499a7c6c1da1a44b, type: 3}
   heightLine: {fileID: 7274017375620364313}
   playableArea: {fileID: 2025821258110326235}
   score: 0
+  timerTexts:
+  - {fileID: 0}
+  - {fileID: 0}
+  scoreText: {fileID: 0}
+  currentPlayer: 0
+  WinScreen: {fileID: 0}
+  winnner: {fileID: 0}
 --- !u!1 &7274017375620364313
 GameObject:
   m_ObjectHideFlags: 0
