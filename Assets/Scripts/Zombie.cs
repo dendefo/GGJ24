@@ -58,6 +58,8 @@ public class Zombie : MonoBehaviour
                 10 + maxY * 2,
                 LevelManager.Instance.playableArea.transform.localScale.z);
 
+        if (leftFoot.spriteRenderer.sprite == leftFoot.white && rightFoot.spriteRenderer.sprite == rightFoot.white &&
+                               leftHand.spriteRenderer.sprite == leftHand.white && rightHand.spriteRenderer.sprite == rightHand.white) return;
         if (Input.GetKeyDown(KeyCode.A)) UnstickLimb(leftHand);
 
         else if (Input.GetKeyDown(KeyCode.D)) UnstickLimb(rightHand);
@@ -76,6 +78,8 @@ public class Zombie : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (LevelManager.Instance.heightLine.transform.position.y > maxY) return;
+            if (!(leftFoot.spriteRenderer.sprite == leftFoot.red || rightFoot.spriteRenderer.sprite == rightFoot.red ||
+                               leftHand.spriteRenderer.sprite == leftHand.red || rightHand.spriteRenderer.sprite == rightHand.red)) return;
             foreach (var bone in bones)
             {
                 bone.gameObject.tag = "Stickable";

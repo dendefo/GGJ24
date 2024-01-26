@@ -13,10 +13,10 @@ public class LimbEnd : MonoBehaviour
     [SerializeField] private bool _isActive = false;
     public HingeJoint2D secondJoint;
     public HingeJoint2D thirdJoint;
-    [SerializeField] SpriteRenderer spriteRenderer;
-    [SerializeField] Sprite white;
+    public SpriteRenderer spriteRenderer;
+    public Sprite white;
     [SerializeField] Sprite green;
-    [SerializeField] Sprite red;
+    public Sprite red;
     [SerializeField] Sprite empty;
     public bool isActive
     {
