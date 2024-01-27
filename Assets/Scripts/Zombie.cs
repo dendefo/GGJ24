@@ -52,6 +52,7 @@ public class Zombie : MonoBehaviour
         {
             bones.ForEach(bone => bone.bodyType = RigidbodyType2D.Dynamic);
             animator.enabled = false;
+            AudioManager.Instance.PlayRadioTrack();
         }
 
         float[] limbYPosArray =
