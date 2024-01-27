@@ -458,7 +458,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ZOMBIE RAGDOLL
+  m_text: DEAD-LIFT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7c97b2dbb7fb724a9825c0bb9895faa, type: 2}
   m_sharedMaterial: {fileID: 8598185540737413758, guid: f7c97b2dbb7fb724a9825c0bb9895faa, type: 2}
