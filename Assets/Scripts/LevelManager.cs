@@ -24,6 +24,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] GameObject WinScreen;
     [SerializeField] TMPro.TMP_Text winnner;
     public ParticleSystem Choose;
+    public GameObject SpaceToolTIp;
 
     private void Awake()
     {

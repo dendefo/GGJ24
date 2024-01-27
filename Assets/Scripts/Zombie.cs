@@ -47,7 +47,7 @@ public class Zombie : MonoBehaviour
 
     private void Update()
     {
-        if (animator.GetNextAnimatorStateInfo(0).length != 0|| Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.Z)
+        if (animator.GetNextAnimatorStateInfo(0).length != 0 || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.Z)
             || Input.GetKeyDown(KeyCode.C))
         {
             bones.ForEach(bone => bone.bodyType = RigidbodyType2D.Dynamic);
@@ -62,10 +62,14 @@ public class Zombie : MonoBehaviour
         };
         maxY = limbYPosArray.Max();
         if (LevelManager.Instance.heightLine.transform.position.y < maxY)
+        {
             LevelManager.Instance.playableArea.transform.localScale = new Vector3(
                 LevelManager.Instance.playableArea.transform.localScale.x,
                 10 + maxY * 2,
                 LevelManager.Instance.playableArea.transform.localScale.z);
+            LevelManager.Instance.SpaceToolTIp.SetActive(true);
+        }
+        else LevelManager.Instance.SpaceToolTIp.SetActive(false);
 
 
         if (Input.GetKeyDown(KeyCode.A)) UnstickLimb(leftHand);
@@ -137,11 +141,11 @@ public class Zombie : MonoBehaviour
         if (limb != null) return;
         limb = limbb;
         limb.isActive = true;
-        limb.OtherJoints.ForEach(joint => Destroy(joint)); 
+        limb.OtherJoints.ForEach(joint => Destroy(joint));
         LevelManager.Instance.Choose.gameObject.SetActive(true);
         LevelManager.Instance.Choose.transform.parent = limb.transform;
         LevelManager.Instance.Choose.transform.localRotation = Quaternion.Euler(-90, 0, 0);
-        LevelManager.Instance.Choose.transform.localScale = Vector3.one*2;
+        LevelManager.Instance.Choose.transform.localScale = Vector3.one * 2;
         LevelManager.Instance.Choose.transform.localPosition = Vector3.zero;
     }
 }

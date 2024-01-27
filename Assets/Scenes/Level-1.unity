@@ -1339,7 +1339,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAYER           WINS
+  m_text: PLAYER WINS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7c97b2dbb7fb724a9825c0bb9895faa, type: 2}
   m_sharedMaterial: {fileID: 8598185540737413758, guid: f7c97b2dbb7fb724a9825c0bb9895faa, type: 2}
@@ -1373,7 +1373,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2700,7 +2700,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47.1, y: 0}
+  m_AnchoredPosition: {x: -192.5, y: 0}
   m_SizeDelta: {x: 199.331, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1376491236
@@ -3804,7 +3804,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -64, y: 0}
+  m_AnchoredPosition: {x: -64, y: 151.2}
   m_SizeDelta: {x: 275.2836, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1869651431
@@ -17630,6 +17630,10 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 737039835}
+    - target: {fileID: 686875565141211886, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
+      propertyPath: SpaceToolTIp
+      value: 
+      objectReference: {fileID: 1869651429}
     - target: {fileID: 686875565141211886, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
       propertyPath: timerTexts.Array.data[0]
       value: 
