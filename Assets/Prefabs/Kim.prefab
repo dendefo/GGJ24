@@ -936,6 +936,18 @@ PrefabInstance:
       propertyPath: bones.Array.data[16]
       value: 
       objectReference: {fileID: 4513055467265967644}
+    - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
+      propertyPath: voiceLines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
+      propertyPath: voiceLines.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: e72ee605cbb08c34daa6345f77a25871, type: 3}
+    - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
+      propertyPath: voiceLines.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8800d86aab0d38c49a7e683d10d0f91a, type: 3}
     - target: {fileID: 7161347499868109681, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 3.384288
