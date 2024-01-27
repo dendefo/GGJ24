@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2690706331795454557}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.34, y: 0.03, z: 0}
+  m_LocalPosition: {x: 3.732, y: 0.03, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -97,7 +97,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.2
 --- !u!233 &4915651898258240400
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -114,7 +114,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 4.34, y: 0.030000696}
+  m_ConnectedAnchor: {x: 3.732, y: 0.030000811}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -231,7 +231,7 @@ Transform:
   m_GameObject: {fileID: 2739909828548434588}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.24, y: 0.01, z: 0}
+  m_LocalPosition: {x: 2.947, y: 0.01, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -298,7 +298,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.2
 --- !u!233 &7944305231279327191
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -315,7 +315,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 4.2399974, y: 0.010000225}
+  m_ConnectedAnchor: {x: 2.946999, y: 0.010000225}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -432,7 +432,7 @@ Transform:
   m_GameObject: {fileID: 5000846165858249768}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.89, y: -0.01, z: 0}
+  m_LocalPosition: {x: 3.313, y: -0.01, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -481,7 +481,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 3.8899994, y: -0.00999999}
+  m_ConnectedAnchor: {x: 3.313, y: -0.009999871}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -524,7 +524,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.2
 --- !u!114 &2435474173441062511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,7 +633,7 @@ Transform:
   m_GameObject: {fileID: 6874386028242954112}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.24, y: 0.03, z: 0}
+  m_LocalPosition: {x: 3.36, y: 0.03, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -700,7 +700,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.2
 --- !u!233 &3387820842621032302
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -717,7 +717,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 4.2399993, y: 0.029999774}
+  m_ConnectedAnchor: {x: 3.359997, y: 0.029998075}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0

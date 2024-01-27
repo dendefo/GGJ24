@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 935925918628345630}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.48, y: -0.01, z: 0}
+  m_LocalPosition: {x: 2.374, y: -0.01, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -79,7 +79,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 2.4799998, y: -0.010000386}
+  m_ConnectedAnchor: {x: 2.373999, y: -0.010000227}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -122,7 +122,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.2
 --- !u!114 &8426183149712556788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,7 +231,7 @@ Transform:
   m_GameObject: {fileID: 2178837520112830633}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.42, y: 0.01, z: 0}
+  m_LocalPosition: {x: 2.245, y: 0.01, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -298,7 +298,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.2
 --- !u!233 &189678251312983088
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -315,7 +315,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 2.4199998, y: 0.009999671}
+  m_ConnectedAnchor: {x: 2.2450006, y: 0.009999671}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -432,7 +432,7 @@ Transform:
   m_GameObject: {fileID: 6910518509963450036}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.33, y: 0, z: 0}
+  m_LocalPosition: {x: 2.13, y: -0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -499,7 +499,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.35
 --- !u!233 &4197515837206087076
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -516,7 +516,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 2.3299983, y: -0.00000009437398}
+  m_ConnectedAnchor: {x: 2.1299992, y: 0.00000008940693}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
