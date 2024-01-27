@@ -83,9 +83,12 @@ public class Zombie : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.Z) ||
             Input.GetKeyUp(KeyCode.C))
         {
-            limb.isActive = false;
-            limb = null;
-            LevelManager.Instance.Choose.gameObject.SetActive(false);
+            if (limb != null)
+            {
+                limb.isActive = false;
+                limb = null;
+                LevelManager.Instance.Choose.gameObject.SetActive(false);
+            }
         }
         if (leftFoot.spriteRenderer.sprite != leftFoot.red && rightFoot.spriteRenderer.sprite != rightFoot.red &&
             leftHand.spriteRenderer.sprite != leftHand.red && rightHand.spriteRenderer.sprite != rightHand.red)
