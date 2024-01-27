@@ -17631,14 +17631,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 737039835}
     - target: {fileID: 686875565141211886, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: timerText
-      value: 
-      objectReference: {fileID: 543770978}
-    - target: {fileID: 686875565141211886, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: SpawnPoint
-      value: 
-      objectReference: {fileID: 1228684898}
-    - target: {fileID: 686875565141211886, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
       propertyPath: timerTexts.Array.data[0]
       value: 
       objectReference: {fileID: 543770978}
@@ -17654,9 +17646,29 @@ PrefabInstance:
       propertyPath: SpawnPoints.Array.data[1]
       value: 
       objectReference: {fileID: 1044441870}
-    - target: {fileID: 2295325118881551224, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.5
+    - target: {fileID: 948778544614171697, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 948778544614171697, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 948778544614171697, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892113266460613613, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3153989110553107283, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3153989110553107283, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
+      propertyPath: playOnAwake
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4438750724403042742, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17702,9 +17714,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelManger
       objectReference: {fileID: 0}
-    - target: {fileID: 8032849898825412050, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 14
+    - target: {fileID: 6568109378603870029, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8072239375285516068, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8072239375285516068, guid: 8d9529f40ef69f64198c8fd464ba7e6f, type: 3}
+      propertyPath: playOnAwake
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

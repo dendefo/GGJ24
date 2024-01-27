@@ -23,6 +23,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private int currentPlayer = 0;
     [SerializeField] GameObject WinScreen;
     [SerializeField] TMPro.TMP_Text winnner;
+    public ParticleSystem Choose;
 
     private void Awake()
     {

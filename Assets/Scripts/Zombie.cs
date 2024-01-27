@@ -81,6 +81,7 @@ public class Zombie : MonoBehaviour
         {
             limb.isActive = false;
             limb = null;
+            LevelManager.Instance.Choose.gameObject.SetActive(false);
         }
         if (leftFoot.spriteRenderer.sprite != leftFoot.red && rightFoot.spriteRenderer.sprite != rightFoot.red &&
             leftHand.spriteRenderer.sprite != leftHand.red && rightHand.spriteRenderer.sprite != rightHand.red)
@@ -136,6 +137,11 @@ public class Zombie : MonoBehaviour
         if (limb != null) return;
         limb = limbb;
         limb.isActive = true;
-        limb.OtherJoints.ForEach(joint => Destroy(joint));
+        limb.OtherJoints.ForEach(joint => Destroy(joint)); 
+        LevelManager.Instance.Choose.gameObject.SetActive(true);
+        LevelManager.Instance.Choose.transform.parent = limb.transform;
+        LevelManager.Instance.Choose.transform.localRotation = Quaternion.Euler(-90, 0, 0);
+        LevelManager.Instance.Choose.transform.localScale = Vector3.one*2;
+        LevelManager.Instance.Choose.transform.localPosition = Vector3.zero;
     }
 }
