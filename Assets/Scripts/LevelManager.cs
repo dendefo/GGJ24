@@ -81,8 +81,9 @@ public class LevelManager : MonoBehaviour
         if (currentPlayer == 0) currentPlayer = 1;
         else currentPlayer = 0;
 
-        Instantiate(zombiePrefabs[Random.Range(0, zombiePrefabs.Count)], SpawnPoints[currentPlayer].transform.position,
+        Instantiate(zombiePrefabs[0], SpawnPoints[currentPlayer].transform.position,
             Quaternion.identity);
+        zombiePrefabs.RemoveAt(0);
     }
 
     private void OnDisable()
