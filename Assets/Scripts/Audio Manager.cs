@@ -26,6 +26,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip MusicIntro;
     [SerializeField] private AudioClip[] MusicLoop;
 
+    [SerializeField] private AudioClip[] SFX;
+
     private Queue<AudioClip> RadioQueue = new();
     private Queue<AudioClip> MusicQueue = new();
     private Queue<AudioClip> ZombieQueue = new();
@@ -85,6 +87,11 @@ public class AudioManager : MonoBehaviour
         Debug.Log(clip.name);
     }
 
+    public void PlaySFX()
+    {
+        AudioSource.PlayClipAtPoint(SFX[Random.Range(0,SFX.Length)],transform.position);
+    }
+
     public void PlayRadioTrack()
     {
         RadioWait++;
@@ -126,13 +133,7 @@ public class AudioManager : MonoBehaviour
             _musicSource.Play();
             AdjustVolumes();
             yield return new WaitForSeconds(_musicSource.clip.length);
-            if (MusicQueue.Count < 2) 
-            { 
-                for (int i = 0; i < MusicLoop.Length; i++)
-                {
-                    MusicQueue.Enqueue(MusicLoop[i]);
-                }
-            }
+            MusicQueue.Enqueue(MusicLoop[Random.Range(0,MusicLoop.Length)]);
             
         }
 
