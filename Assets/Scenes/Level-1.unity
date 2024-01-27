@@ -1001,7 +1001,7 @@ MonoBehaviour:
   _radioSource: {fileID: 519420036}
   _musicSource: {fileID: 519420035}
   _zombieSource: {fileID: 519420034}
-  RadioVolume: 1
+  RadioVolume: 0
   MusicVolume: 1
   ZombieVolume: 1
   RadioWeight: 0.5
