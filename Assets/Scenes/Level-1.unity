@@ -1142,7 +1142,11 @@ MonoBehaviour:
   RadioWeight: 0.5
   MusicWeight: 0.2
   ZombieWeight: 0.3
-  RadioLines: []
+  RadioLines:
+  - {fileID: 8300000, guid: dac9132d226ae874aaf34d39f463b142, type: 3}
+  - {fileID: 8300000, guid: 7177d5c6ee101f94487a62900d2037e8, type: 3}
+  - {fileID: 8300000, guid: b6dc0d9819a1a3f47b468c37fa51a76e, type: 3}
+  - {fileID: 8300000, guid: 8d8d96ab04da40f4d9a60dc65412d90e, type: 3}
   RadioWaitDuration: 3
   MusicIntro: {fileID: 8300000, guid: ae97867deaab5284ab91dcfacb7f54c4, type: 3}
   MusicLoop:
