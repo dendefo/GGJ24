@@ -16,9 +16,9 @@ public class LevelManager : MonoBehaviour
     public GameObject playableArea;
     public float score;
 
-    public TextMeshProUGUI[] timerTexts;
+    public TextMeshProUGUI timerTexts;
     public TextMeshProUGUI scoreText;
-    private float[] countdownTimer = { 60f, 60f };
+    private float countdownTimer = 60f;
 
     [SerializeField] private int currentPlayer = 0;
     [SerializeField] GameObject WinScreen;
@@ -46,18 +46,18 @@ public class LevelManager : MonoBehaviour
     {
         if (Zombie.bones[0].bodyType == RigidbodyType2D.Static) return;
 
-        countdownTimer[currentPlayer] -= Time.deltaTime;
+        countdownTimer -= Time.deltaTime;
 
-        countdownTimer[currentPlayer] = Mathf.Max(countdownTimer[currentPlayer], 0f);
+        countdownTimer = Mathf.Max(countdownTimer, 0f);
 
-        int seconds = Mathf.FloorToInt(countdownTimer[currentPlayer]);
+        int seconds = Mathf.FloorToInt(countdownTimer);
 
-        if (timerTexts[currentPlayer] != null)
+        if (timerTexts != null)
         {
-            timerTexts[currentPlayer].SetText(seconds.ToString());
+            timerTexts.SetText(seconds.ToString()+" s");
         }
 
-        if (countdownTimer[currentPlayer] <= 0f)
+        if (countdownTimer <= 0f)
         {
             WinScreen.SetActive(true);
             winnner.SetText(currentPlayer == 0 ? "RIGHT" : "LEFT");
@@ -77,7 +77,7 @@ public class LevelManager : MonoBehaviour
         if (score > 0) scoreText.SetText("Score " + score);
 
         zombie.enabled = false;
-        countdownTimer[currentPlayer] = 60f;
+        countdownTimer = 60f;
         if (currentPlayer == 0) currentPlayer = 1;
         else currentPlayer = 0;
 
