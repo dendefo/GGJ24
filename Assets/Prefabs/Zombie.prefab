@@ -276,6 +276,7 @@ MonoBehaviour:
   - {fileID: 5279686657702903262, guid: 42c141471e1ad114689d0104a88120ce, type: 3}
   - {fileID: 2744296253117281154, guid: 2d28be0c894d28642a3393f6e870b8f0, type: 3}
   - {fileID: 6722366501075327230, guid: 06a1b89c4a48bb149b411167e294f35e, type: 3}
+  animator: {fileID: 5473177372131282213}
 --- !u!210 &7576371473862450403
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -1872,9 +1873,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6690942342983514781}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5a16e6101373f234594ad77a33708768, type: 2}
+  m_Controller: {fileID: 9100000, guid: 24f6593d9b862d540a1533ca5d9121d2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

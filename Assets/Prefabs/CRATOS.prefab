@@ -976,6 +976,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1862043607554175001}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 83d931d455806e7418a528494e678d1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8953436578633179548}
     - targetCorrespondingSourceObject: {fileID: 386791141387813222, guid: 83d931d455806e7418a528494e678d1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5935408274854596586}
@@ -1436,6 +1439,32 @@ CapsuleCollider2D:
   m_Offset: {x: 0.71, y: 0}
   m_Size: {x: 1.5, y: 1.7}
   m_Direction: 1
+--- !u!1 &3728783433208513934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 83d931d455806e7418a528494e678d1e, type: 3}
+  m_PrefabInstance: {fileID: 3771908831427159091}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8953436578633179548
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3728783433208513934}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: c850480a20f833e4fbefa646250f5f66, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3892715796215849073 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 170353372575073346, guid: 83d931d455806e7418a528494e678d1e, type: 3}
@@ -2129,6 +2158,10 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 8953436578633179548}
     - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
       propertyPath: leftFoot
       value: 

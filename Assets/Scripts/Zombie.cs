@@ -28,11 +28,12 @@ public class Zombie : MonoBehaviour
     public float maxY = 0;
     [SerializeField] private List<AudioClip> voiceLines = new List<AudioClip>();
     public List<ParticleSystem> particles;
+    [SerializeField] Animator animator;
 
     private void Awake()
     {
         LevelManager.Instance.Zombie = this;
-
+        bones.ForEach(bone => bone.bodyType = RigidbodyType2D.Static);
     }
 
     private void OnEnable()
@@ -46,6 +47,13 @@ public class Zombie : MonoBehaviour
 
     private void Update()
     {
+        if (animator.GetNextAnimatorStateInfo(0).length != 0|| Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.Z)
+            || Input.GetKeyDown(KeyCode.C))
+        {
+            bones.ForEach(bone => bone.bodyType = RigidbodyType2D.Dynamic);
+            animator.enabled = false;
+        }
+
         float[] limbYPosArray =
         {
             rightHand.gameObject.transform.position.y, leftHand.gameObject.transform.position.y,
@@ -59,7 +67,7 @@ public class Zombie : MonoBehaviour
                 10 + maxY * 2,
                 LevelManager.Instance.playableArea.transform.localScale.z);
 
-        
+
         if (Input.GetKeyDown(KeyCode.A)) UnstickLimb(leftHand);
 
         else if (Input.GetKeyDown(KeyCode.D)) UnstickLimb(rightHand);

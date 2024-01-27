@@ -960,6 +960,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 820456233228957142}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 3eef63c7be8afe54f8e78a1d1e191db1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 266339724308236432}
     - targetCorrespondingSourceObject: {fileID: 386791141387813222, guid: 3eef63c7be8afe54f8e78a1d1e191db1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2961344095868361004}
@@ -1594,6 +1597,32 @@ CapsuleCollider2D:
   m_Offset: {x: 0.6, y: 0}
   m_Size: {x: 1.52, y: 3.29}
   m_Direction: 0
+--- !u!1 &5934351763454904419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 3eef63c7be8afe54f8e78a1d1e191db1, type: 3}
+  m_PrefabInstance: {fileID: 6178026794356042206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &266339724308236432
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5934351763454904419}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 40d852b1325aff048a11afa49dcd5f04, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6332612886649597340 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 170353372575073346, guid: 3eef63c7be8afe54f8e78a1d1e191db1, type: 3}
@@ -2113,6 +2142,10 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 266339724308236432}
     - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
       propertyPath: leftFoot
       value: 

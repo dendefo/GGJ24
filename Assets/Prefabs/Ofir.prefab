@@ -845,6 +845,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 3310820123295550470}
+    - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
       propertyPath: leftFoot
       value: 
       objectReference: {fileID: 1165916619763521096}
@@ -1162,6 +1166,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 3082852413888538064}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 7ae848889e8f5cb4b8e6d957428ce5ec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3310820123295550470}
     - targetCorrespondingSourceObject: {fileID: 386791141387813222, guid: 7ae848889e8f5cb4b8e6d957428ce5ec, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6709913860354537992}
@@ -1985,6 +1992,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &6252086739842147542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 7ae848889e8f5cb4b8e6d957428ce5ec, type: 3}
+  m_PrefabInstance: {fileID: 5846815929142740331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3310820123295550470
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6252086739842147542}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 460f797bb54931d41b834bedb06b93f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7202308668133006336 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5559784385719379605, guid: 7ae848889e8f5cb4b8e6d957428ce5ec, type: 3}

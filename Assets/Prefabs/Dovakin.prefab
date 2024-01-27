@@ -976,6 +976,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2348776336334491305}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 92743aa923af76a46a08b44b3861ecde, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7978351055596721685}
     - targetCorrespondingSourceObject: {fileID: 386791141387813222, guid: 92743aa923af76a46a08b44b3861ecde, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4994968186636023664}
@@ -2075,6 +2078,32 @@ CapsuleCollider2D:
   m_Offset: {x: 0.75, y: 0}
   m_Size: {x: 1.66, y: 3.32}
   m_Direction: 0
+--- !u!1 &7447865197433331112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 92743aa923af76a46a08b44b3861ecde, type: 3}
+  m_PrefabInstance: {fileID: 6970426738456968213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7978351055596721685
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7447865197433331112}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 65c59689defb8404c8a8b164860256d4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &8616573813398259147 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: 92743aa923af76a46a08b44b3861ecde, type: 3}
@@ -2121,6 +2150,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 0.030001005
       objectReference: {fileID: 0}
+    - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 7978351055596721685}
     - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
       propertyPath: leftFoot
       value: 

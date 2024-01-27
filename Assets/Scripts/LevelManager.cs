@@ -42,6 +42,8 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
+        if (Zombie.bones[0].bodyType == RigidbodyType2D.Static) return;
+
         countdownTimer[currentPlayer] -= Time.deltaTime;
 
         countdownTimer[currentPlayer] = Mathf.Max(countdownTimer[currentPlayer], 0f);
@@ -56,7 +58,7 @@ public class LevelManager : MonoBehaviour
         if (countdownTimer[currentPlayer] <= 0f)
         {
             WinScreen.SetActive(true);
-            winnner.SetText(currentPlayer==0?"RIGHT":"LEFT");
+            winnner.SetText(currentPlayer == 0 ? "RIGHT" : "LEFT");
             Time.timeScale = 0;
         }
     }
@@ -69,14 +71,14 @@ public class LevelManager : MonoBehaviour
     private void Zombie_OnZombieStick(Zombie zombie)
     {
         string formattedFloat = heightLine.transform.position.y.ToString("F2");
-        score = (int)(float.Parse(formattedFloat)*100);
+        score = (int)(float.Parse(formattedFloat) * 100);
         if (score > 0) scoreText.SetText("Score " + score);
 
         zombie.enabled = false;
         countdownTimer[currentPlayer] = 60f;
         if (currentPlayer == 0) currentPlayer = 1;
         else currentPlayer = 0;
-        
+
         Instantiate(zombiePrefabs[Random.Range(0, zombiePrefabs.Count)], SpawnPoints[currentPlayer].transform.position,
             Quaternion.identity);
     }

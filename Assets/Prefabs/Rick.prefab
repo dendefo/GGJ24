@@ -976,6 +976,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8964892237356629075}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 4fa3594080658be429af4ca6f96ca898, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7391415823253101071}
     - targetCorrespondingSourceObject: {fileID: 386791141387813222, guid: 4fa3594080658be429af4ca6f96ca898, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4003610829497301456}
@@ -1461,6 +1464,32 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: -10000
     m_UpperAngle: 10000
+--- !u!1 &4375823993186682221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 4fa3594080658be429af4ca6f96ca898, type: 3}
+  m_PrefabInstance: {fileID: 4277790051361400016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7391415823253101071
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4375823993186682221}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: f49fddecc06ed634cb41612878036671, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4468673767142909366 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 386791141387813222, guid: 4fa3594080658be429af4ca6f96ca898, type: 3}
@@ -2121,6 +2150,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 0.030001005
       objectReference: {fileID: 0}
+    - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 7391415823253101071}
     - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
       propertyPath: leftFoot
       value: 

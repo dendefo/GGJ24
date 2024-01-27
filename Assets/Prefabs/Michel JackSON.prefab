@@ -845,6 +845,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 3549611658028628042}
+    - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
       propertyPath: leftFoot
       value: 
       objectReference: {fileID: 7563634884662543967}
@@ -1162,6 +1166,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7992482415157194176}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 5ab563ffde80a7c40a4df0a9885277b0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3549611658028628042}
     - targetCorrespondingSourceObject: {fileID: 386791141387813222, guid: 5ab563ffde80a7c40a4df0a9885277b0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6359492068047680239}
@@ -1714,6 +1721,32 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.68, y: 1}
   m_Direction: 0
+--- !u!1 &4011340226713899193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 5ab563ffde80a7c40a4df0a9885277b0, type: 3}
+  m_PrefabInstance: {fileID: 3480415483354345732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3549611658028628042
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4011340226713899193}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: a39e46d45ba93bf45802ae42c007474e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4708679951365976850 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1075098041625165290, guid: 5ab563ffde80a7c40a4df0a9885277b0, type: 3}
