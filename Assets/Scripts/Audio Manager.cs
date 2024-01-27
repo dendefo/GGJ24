@@ -97,8 +97,10 @@ public class AudioManager : MonoBehaviour
         RadioWait++;
         if (RadioWait >= RadioWaitDuration && index < RadioLines.Length) 
         {
+            RadioWait = 0;
             RadioQueue.Enqueue(RadioLines[index]);
             TryPlayNext(RadioQueue, _radioSource);
+            index++;
         }
     }
 

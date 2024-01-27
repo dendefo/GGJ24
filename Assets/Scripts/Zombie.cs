@@ -29,6 +29,7 @@ public class Zombie : MonoBehaviour
     [SerializeField] private List<AudioClip> voiceLines = new List<AudioClip>();
     public List<ParticleSystem> particles;
     [SerializeField] Animator animator;
+    bool radioIsPlayed = false;
 
     private void Awake()
     {
@@ -52,7 +53,11 @@ public class Zombie : MonoBehaviour
         {
             bones.ForEach(bone => bone.bodyType = RigidbodyType2D.Dynamic);
             animator.enabled = false;
-            AudioManager.Instance.PlayRadioTrack();
+            if (!radioIsPlayed)
+            {
+                AudioManager.Instance.PlayRadioTrack();
+                radioIsPlayed = true;
+            }
         }
 
         float[] limbYPosArray =
