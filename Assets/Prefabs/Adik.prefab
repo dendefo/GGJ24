@@ -930,14 +930,14 @@ PrefabInstance:
       objectReference: {fileID: 3593181506990307853}
     - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
       propertyPath: voiceLines.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
-      propertyPath: voiceLines.Array.data[2]
+      propertyPath: voiceLines.Array.data[4]
       value: 
       objectReference: {fileID: 8300000, guid: 67f0888fb1bbc5b4ca5cd8e0c8d4b839, type: 3}
     - target: {fileID: 7133565315904217686, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}
-      propertyPath: voiceLines.Array.data[3]
+      propertyPath: voiceLines.Array.data[5]
       value: 
       objectReference: {fileID: 8300000, guid: 64c435efbfefa214f8b992a9d35694a5, type: 3}
     - target: {fileID: 7161347499868109681, guid: cbcf0d108a0d2934d8a2f50614cf8867, type: 3}

@@ -270,8 +270,10 @@ MonoBehaviour:
   - {fileID: 5378556983930506160}
   maxY: 0
   voiceLines:
-  - {fileID: 8300000, guid: 0b4691cf2b7a12749b8c7f0d7da310c2, type: 3}
-  - {fileID: 8300000, guid: 59e83fc9a4014d84a90f1a3ca0b864c6, type: 3}
+  - {fileID: 8300000, guid: b9d1df11bda952a4e9f613e5c855cafc, type: 3}
+  - {fileID: 8300000, guid: f2e5e1ab75dc1884fac926f143788593, type: 3}
+  - {fileID: 8300000, guid: 72c875fd96e1e3949ad95e3e51d775bd, type: 3}
+  - {fileID: 8300000, guid: 5b17dca926ce2bc408d2d0ca60051a7e, type: 3}
   particles:
   - {fileID: 5279686657702903262, guid: 42c141471e1ad114689d0104a88120ce, type: 3}
   - {fileID: 2744296253117281154, guid: 2d28be0c894d28642a3393f6e870b8f0, type: 3}
