@@ -31,8 +31,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.48, y: -0.01, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3436033667647967856}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -232,8 +232,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.42, y: 0.01, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5276799409712226850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -433,8 +433,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.33, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1591606273080322157}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -499,7 +499,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.3
 --- !u!233 &4197515837206087076
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -633,9 +633,9 @@ Transform:
   m_GameObject: {fileID: 8050366096995989971}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.25, y: 0.03, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 2.11, y: 0.03, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1471209806223321917}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -700,7 +700,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.3
 --- !u!233 &2738744824422950756
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -717,7 +717,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 2.2499998, y: 0.030000081}
+  m_ConnectedAnchor: {x: 2.1099994, y: 0.02999998}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1181,7 +1181,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 1.06, y: 0.04}
-  m_Size: {x: 2.68, y: 1.27}
+  m_Size: {x: 2.68, y: 0.97}
   m_Direction: 1
 --- !u!233 &665897710709642864
 HingeJoint2D:
