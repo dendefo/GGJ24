@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
     private int RadioWait = 0;
 
     [SerializeField] private AudioClip MusicIntro;
-    [SerializeField] private AudioClip MusicLoop;
+    [SerializeField] private AudioClip[] MusicLoop;
 
     private Queue<AudioClip> RadioQueue = new();
     private Queue<AudioClip> MusicQueue = new();
@@ -60,7 +60,7 @@ public class AudioManager : MonoBehaviour
         {
             _instance = this;
             //DontDestroyOnLoad(this.gameObject);
-            //StartCoroutine(PlayMusicLoop());
+            StartCoroutine(PlayMusicLoop());
         }
     }
 
@@ -119,13 +119,21 @@ public class AudioManager : MonoBehaviour
     {
         MusicQueue.Enqueue(MusicIntro);
 
-        while (MusicQueue.Peek() != null)
+
+        while (MusicQueue.Count > 0)
         {
             _musicSource.clip = MusicQueue.Dequeue();
             _musicSource.Play();
             AdjustVolumes();
             yield return new WaitForSeconds(_musicSource.clip.length);
-            MusicQueue.Enqueue(MusicLoop);
+            if (MusicQueue.Count < 2) 
+            { 
+                for (int i = 0; i < MusicLoop.Length; i++)
+                {
+                    MusicQueue.Enqueue(MusicLoop[i]);
+                }
+            }
+            
         }
 
     }

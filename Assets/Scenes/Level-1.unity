@@ -1145,8 +1145,13 @@ MonoBehaviour:
   ZombieWeight: 0.3
   RadioLines: []
   RadioWaitDuration: 3
-  MusicIntro: {fileID: 0}
-  MusicLoop: {fileID: 0}
+  MusicIntro: {fileID: 8300000, guid: ae97867deaab5284ab91dcfacb7f54c4, type: 3}
+  MusicLoop:
+  - {fileID: 8300000, guid: 0c8d4c12a1090784480829d0e9649da2, type: 3}
+  - {fileID: 8300000, guid: 3d02e101f84d8454fae78609e544946d, type: 3}
+  - {fileID: 8300000, guid: b334395a9867c3f4e8494308b0c70fee, type: 3}
+  - {fileID: 8300000, guid: 534f1295b3de03f448472847cd40f692, type: 3}
+  - {fileID: 8300000, guid: ae97867deaab5284ab91dcfacb7f54c4, type: 3}
 --- !u!1 &543770976
 GameObject:
   m_ObjectHideFlags: 0
